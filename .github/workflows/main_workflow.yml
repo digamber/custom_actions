@@ -1,4 +1,5 @@
-on: [push]
+name: my customaction workflow
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
