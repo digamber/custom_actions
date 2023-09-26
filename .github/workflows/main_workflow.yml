@@ -1,13 +1,12 @@
-name: custom action test
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: execute custom aciton
-      id: custom-action
-      uses: ./
-      with: 
-        message: "hello from cust action"
-        -name: cust action output
-        run: echo "output is ${{steps.custom-action.outputs.message}}
+    -name: cust action
+    id: custom-action
+    uses: ./
+    with: 
+      message: "hello from cust action"
+      -name: cust action output
+      run: echo "output is ${{steps.custom-action.outputs.message}}
