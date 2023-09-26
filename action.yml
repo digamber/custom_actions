@@ -1,0 +1,11 @@
+name: 'custom action digamber'
+decription: 'jsut print msg'
+input: 
+  message:
+   description: 'print msg'
+   required: true
+outputs:
+  message:
+run:
+  using: 'node12'
+  main: 'action.js'
